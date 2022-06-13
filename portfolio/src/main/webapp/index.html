@@ -11,18 +11,25 @@
       <img src="images/my_image.jpg" />
       <h1>Adwait Kulkarni</h1>
       <h3>Hello!</h3>
-      <p>I am a second-year computer science major at the University of British Columbia in Vancouver.</p>
+      <div id="about-me">
+        <p>I am a second-year computer science major at the University of British Columbia in Vancouver.
+        I like to work with web development technologies, analyze algorithms and study emerging technologies.
+        In my free time, I like to play sports like badminton, soccer, swimming, build personal projects 
+        as well as listen to music!</p>
+      </div>
       <p>Below are some of the projects I have built</p>
       <ul>
           <li>User Management System</li>
           <li>General Knowledge Quiz Application</li>
           <li>Netflix UI Clone</li>
       </ul>
-      <form action="/form-handler" method="POST">
-        <p>Let me know your message!</p>
-        <textarea name="text-input"></textarea>
+      <p>Let me know your message! Your message sentiment will be analyzed and 
+          you will receive a score between -1 and 1.
+      </p>
+      <form action="/sentiment" method="POST">
+        <textarea name="message"></textarea>
         <br/>
-        <input type="submit" />
+        <button>Submit</button>
       </form>      
       <p>My Social Links:</p>
       <a href="https://linkedin.com/in/AdwaitKulkarni58/">LinkedIn</a>
